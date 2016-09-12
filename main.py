@@ -78,7 +78,7 @@ def parse_proj(exp):
 			print('Projecao de uma selecao')
 			print('Atributos: ' + attr)
 			print('Relacao: ' + rel_sel)
-			query = "SELECT {} FROM {} WHERE {}".format(attr, rel_sel, cond_sel)
+			query = 'SELECT {} FROM {} WHERE {}'.format(attr, rel_sel, cond_sel)
 			print ('Query SQL: ' + query + '\n')
 			run_query(query)
 		else:
@@ -86,7 +86,7 @@ def parse_proj(exp):
 		return		
 	print('Atributos: ' + attr)
 	print('Relacao: ' + rel)
-	query = "SELECT {} FROM {}".format(attr, rel)
+	query = 'SELECT {} FROM {}'.format(attr, rel)
 	print('Query SQL: ' + query + '\n')
 	run_query(query)
 
@@ -94,12 +94,13 @@ def parse_proj(exp):
 def show_help():
 	print(HELP_TEXT)
 
+
 def set_database(path):
 	global c
 	global conn
-	
 	conn = sqlite3.connect(path)
 	c = conn.cursor()
+
 
 def main():
 	set_database('registros.db')
@@ -118,7 +119,7 @@ def main():
 			# Talvez devesse fechar a conexão antiga?
 			set_database(s.split(' ')[1])
 		else:
-			print("Comando nao existente. Digite 'help' para ver a lista de comandos.")
+			print('Comando nao existente. Digite \'help\' para ver a lista de comandos.')
 
 
 if __name__ == '__main__':
