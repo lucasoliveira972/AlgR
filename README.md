@@ -7,23 +7,25 @@ Python 3
 # Usage
 > The script will run queries within the 'registros.db' database.
 > Currently this database contains two tables, Produtos and Usuarios, used for testing purposes only.
-> 
-> 
-> Produtos:
->| codigo | nome | preco  |
->| ----- |:-------------:| -----:|
->| 1 | Royale with Cheese | 10.99 |
->| 2 | Chocolate | 8 |
->| 3 | Life is Strange | 36.99 |
-> 
-> Usuarios:
->| Codigo | Nome | Idade  | Endereco | 
->| ---- |:-------:| -----:|:-------------:|
->| 1 | Joao | 21 | Rua dos Invalidos |
->| 2 | Fernanda | 32 | Av Silva e Moura |
->| 3 | Leticia | 19 | Rua Martin |
+ 
+ 
+Produtos:
 
-To start, un the script inside your operating system's terminal:
+| codigo | nome               | preco |
+|--------|--------------------|-------|
+| 1      | Royale with Cheese | 10.99 |
+| 2      | Keyboard           | 8     |
+| 3      | Life is Strange    | 36.99 |
+ 
+Usuarios:
+
+| Codigo | Nome | Idade  | Endereco | 
+| ---- |:-------:| -----:|:-------------:|
+| 1 | Joao | 21 | Rua dos Invalidos |
+| 2 | Fernanda | 32 | Av Silva e Moura |
+| 3 | Leticia | 19 | Rua Martin |
+
+To start, run the script inside your operating system's terminal:
 ```python main.py```
 
 Run a selection operation using the 'SIG' keyword which is the representation for the lowercase sigma character (σ).  
