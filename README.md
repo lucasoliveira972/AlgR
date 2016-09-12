@@ -35,8 +35,7 @@ e.g: To run a expression that shows whichever tuple has the 'idade' attribute gr
 To execute a projection operation, use the 'PI' keyword which is the representation for the lowercase pi character (π).  
 e.g: ```PI preco (Produtos) ``` will show all elements from 'preco' column inside the table 'Produtos'.
 
-In case you want to use the selection's result as a projection argument, run the selection first, then run the projection adding the keyword 'SIG' between braces.  
-e.g:
+In case you want to use the selection's result as a projection argument, run the selection first, then run the projection adding the keyword 'SIG' between braces.
 ```
 SIG idade > 10 (Usuarios)
 PI nome (SIG)
